@@ -224,7 +224,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(470, 450);
             this.Controls.Add(this.addbutton);
             this.Controls.Add(this.textBox6);
@@ -244,8 +244,10 @@
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(486, 489);
+            this.MinimumSize = new System.Drawing.Size(486, 489);
             this.Name = "Aggiungi";
-            this.Text = "Form1";
+            this.Text = "Ristorante";
             this.Load += new System.EventHandler(this.Aggiungi_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

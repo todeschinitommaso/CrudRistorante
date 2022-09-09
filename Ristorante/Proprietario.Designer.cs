@@ -123,7 +123,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(550, 200);
             this.Controls.Add(this.recoverbox);
             this.Controls.Add(this.deletebox);
@@ -132,8 +132,11 @@
             this.Controls.Add(this.editbox);
             this.Controls.Add(this.addbox);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(566, 239);
+            this.MinimumSize = new System.Drawing.Size(566, 239);
             this.Name = "Proprietario";
-            this.Text = "Form2";
+            this.Text = "Ristorante";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Proprietario_FormClosing);
             this.Load += new System.EventHandler(this.Proprietario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

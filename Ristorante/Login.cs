@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Ristorante
 {
@@ -20,7 +21,24 @@ namespace Ristorante
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            string path = @".\menu\";
+            if (Directory.Exists(path))
+            {
+            }
+            else
+            {
+                Directory.CreateDirectory(path);
+                path = @".\menu\1\";
+                Directory.CreateDirectory(path);
+                path = @".\menu\2\";
+                Directory.CreateDirectory(path);
+                path = @".\menu\3\";
+                Directory.CreateDirectory(path);
+                path = @".\menu\4\";
+                Directory.CreateDirectory(path);
+                path = @".\menu\5\";
+                Directory.CreateDirectory(path);
+            }
         }
 
         public int login()
@@ -47,12 +65,14 @@ namespace Ristorante
             {
                 Proprietario Proprietario = new Proprietario(); //apro form proprietario
                 Proprietario.Show();
+                this.Visible = false;
             }
 
             if (log == 1)
             {
                 Cliente Cliente = new Cliente(); //apro form cliente
                 Cliente.Show();
+                this.Visible = false;
             }
 
             if (log == 2)

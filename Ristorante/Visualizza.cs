@@ -169,5 +169,10 @@ namespace Ristorante
                 $"3 Ingrediente : {third} \n" +
                 $"4 Ingrediente : {fourth}");
         }
+
+        private void Visualizza_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

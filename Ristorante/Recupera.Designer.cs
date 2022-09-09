@@ -54,7 +54,7 @@
             this.cestino.ItemHeight = 24;
             this.cestino.Location = new System.Drawing.Point(33, 99);
             this.cestino.Name = "cestino";
-            this.cestino.Size = new System.Drawing.Size(218, 220);
+            this.cestino.Size = new System.Drawing.Size(218, 244);
             this.cestino.TabIndex = 4;
             this.cestino.SelectedIndexChanged += new System.EventHandler(this.cestino_SelectedIndexChanged);
             // 
@@ -110,7 +110,7 @@
             // 
             this.searchbutton.BackColor = System.Drawing.Color.White;
             this.searchbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchbutton.Location = new System.Drawing.Point(310, 286);
+            this.searchbutton.Location = new System.Drawing.Point(310, 310);
             this.searchbutton.Name = "searchbutton";
             this.searchbutton.Size = new System.Drawing.Size(108, 33);
             this.searchbutton.TabIndex = 23;
@@ -122,7 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(473, 374);
             this.Controls.Add(this.searchbutton);
             this.Controls.Add(this.checkBox4);
@@ -131,8 +131,10 @@
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.cestino);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(489, 413);
+            this.MinimumSize = new System.Drawing.Size(489, 413);
             this.Name = "Recupera";
-            this.Text = "Recupera";
+            this.Text = "Ristorante";
             this.Load += new System.EventHandler(this.Recupera_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

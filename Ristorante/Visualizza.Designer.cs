@@ -137,8 +137,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(979, 512);
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.ClientSize = new System.Drawing.Size(981, 498);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -148,8 +148,10 @@
             this.Controls.Add(this.primi);
             this.Controls.Add(this.antipasti);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(997, 537);
+            this.MinimumSize = new System.Drawing.Size(997, 537);
             this.Name = "Visualizza";
-            this.Text = "Visualizza";
+            this.Text = "Ristorante";
             this.Load += new System.EventHandler(this.Visualizza_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

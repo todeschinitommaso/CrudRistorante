@@ -187,7 +187,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(483, 388);
             this.Controls.Add(this.fourthlabel);
             this.Controls.Add(this.thirdlabel);
@@ -203,8 +203,10 @@
             this.Controls.Add(this.namebox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(499, 427);
+            this.MinimumSize = new System.Drawing.Size(499, 427);
             this.Name = "Ricerca";
-            this.Text = "Ricerca";
+            this.Text = "Ristorante";
             this.Load += new System.EventHandler(this.Ricerca_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -57,5 +57,10 @@ namespace Ristorante
             Recupera Recupera = new Recupera();
             Recupera.Show();
         }
+
+        private void Proprietario_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

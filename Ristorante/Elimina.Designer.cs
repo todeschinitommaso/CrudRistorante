@@ -137,12 +137,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(382, 153);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.MaximumSize = new System.Drawing.Size(398, 192);
+            this.MinimumSize = new System.Drawing.Size(398, 192);
             this.Name = "Elimina";
-            this.Text = "Elimina";
+            this.Text = "Ristorante";
             this.Load += new System.EventHandler(this.Elimina_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
